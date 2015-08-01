@@ -1,0 +1,42 @@
+{
+  "name": "zip-input",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "ZIP input component for virtual-dom",
+  "license": "MIT",
+  "repository": "bendrucker/zip-input",
+  "author": {
+    "email": "bvdrucker@gmail.com",
+    "name": "Ben Drucker",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "browser",
+    "component",
+    "input",
+    "postal",
+    "virtual-dom",
+    "zip"
+  ],
+  "devDependencies": {
+    "dispatch-event": "~1.0.0",
+    "raf": "~3.1.0",
+    "standard": "^4.0.0",
+    "tape": "^4.0.0",
+    "thermometer": "~1.2.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "dover": "~1.0.0",
+    "observ": "~0.2.0",
+    "value-event": "~5.1.0",
+    "value-pipe": "~1.0.0",
+    "virtual-dom": "~2.0.1",
+    "zippo": "~1.0.1"
+  }
+}
