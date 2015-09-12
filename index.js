@@ -3,6 +3,7 @@
 var zip = require('zippo')
 var State = require('dover')
 var Observ = require('observ')
+var watch = require('observ/watch')
 var pipe = require('value-pipe')
 var changeEvent = require('value-event/change')
 var h = require('virtual-dom/h')
@@ -13,13 +14,13 @@ function ZipInput (data) {
   data = data || {}
   var state = State({
     value: Observ(data.value || ''),
-    valid: Observ(zip.validate(data.value || '')),
+    valid: Observ(false),
     channels: {
       change: change
     }
   })
 
-  state.value(pipe(zip.validate, state.valid.set))
+  watch(state.value, pipe(zip.validate, state.valid.set))
 
   return state
 }
