@@ -33,6 +33,7 @@
   ],
   "dependencies": {
     "dover": "^1.0.0",
+    "numeric-pattern": "~1.0.0",
     "observ": "~0.2.0",
     "value-event": "~5.1.0",
     "value-pipe": "~1.0.0",

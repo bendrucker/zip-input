@@ -7,6 +7,7 @@ var watch = require('observ/watch')
 var pipe = require('value-pipe')
 var changeEvent = require('value-event/change')
 var h = require('virtual-dom/h')
+var numeric = require('numeric-pattern')
 var extend = require('xtend')
 
 module.exports = ZipInput
@@ -33,8 +34,7 @@ function change (state, data) {
 var defaults = {
   type: 'text',
   name: 'zip',
-  // trigger the big number keyboard on mobile
-  pattern: '[0-9]*'
+  pattern: numeric
 }
 
 ZipInput.render = function render (state, options) {

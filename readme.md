@@ -5,7 +5,7 @@
 * Validates inputs using [zippo](https://github.com/bendrucker/zippo)
 * Strips non-numeric characters
 * Limits to 5 characters
-* Triggers the [large numeric keypad](http://bradfrost.com/blog/mobile/better-numerical-inputs-for-mobile-forms/) on mobile
+* Triggers the [large numeric keypad](https://github.com/bendrucker/numeric-pattern) on mobile
 
 
 ## Install
