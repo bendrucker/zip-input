@@ -32,11 +32,11 @@
     "index.js"
   ],
   "dependencies": {
-    "dover": "~1.0.0",
+    "dover": "^1.0.0",
     "observ": "~0.2.0",
     "value-event": "~5.1.0",
     "value-pipe": "~1.0.0",
-    "virtual-dom": "~2.0.1",
+    "virtual-dom": "^2.0.0",
     "zippo": "~1.0.1"
   }
 }
