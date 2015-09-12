@@ -7,6 +7,7 @@ var watch = require('observ/watch')
 var pipe = require('value-pipe')
 var changeEvent = require('value-event/change')
 var h = require('virtual-dom/h')
+var extend = require('xtend')
 
 module.exports = ZipInput
 
@@ -26,16 +27,25 @@ function ZipInput (data) {
 }
 
 function change (state, data) {
-  state.value.set(zip.parse(data.zip))
+  state.value.set(zip.parse(data[data.name]))
 }
 
-ZipInput.render = function render (state) {
-  return h('input', {
-    type: 'text',
-    name: 'zip',
+var defaults = {
+  type: 'text',
+  name: 'zip',
+  // trigger the big number keyboard on mobile
+  pattern: '[0-9]*'
+}
+
+ZipInput.render = function render (state, options) {
+  options = extend(defaults, options || {})
+
+  options = extend(options, {
     value: state.value,
-    // trigger the big number keyboard on mobile
-    pattern: '[0-9]*',
-    'ev-event': changeEvent(state.channels.change)
+    'ev-event': changeEvent(state.channels.change, {
+      name: options.name
+    })
   })
+
+  return h('input', options)
 }

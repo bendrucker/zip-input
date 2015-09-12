@@ -53,15 +53,9 @@ Type: `boolean`
 
 The validity of the ZIP code. Treat as read only.
 
-###### placeholder
+#### `ZipInput.render(state, options) -> object`
 
-Type: `string`
-
-The placeholder to apply to the input.
-
-#### `ZipInput.render(state) -> object`
-
-Render a ZIP input state to a vtree object.
+Render a ZIP input state to a vtree object. `options` extend the defaults and are passed to [virtual-hyperscript](https://github.com/Matt-Esch/virtual-dom/tree/master/virtual-hyperscript)
 
 
 ## License
