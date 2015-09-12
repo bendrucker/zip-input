@@ -14,7 +14,6 @@ function ZipInput (data) {
   var state = State({
     value: Observ(data.value || ''),
     valid: Observ(zip.validate(data.value || '')),
-    placeholder: Observ(data.placeholder || ''),
     channels: {
       change: change
     }
@@ -34,7 +33,6 @@ ZipInput.render = function render (state) {
     type: 'text',
     name: 'zip',
     value: state.value,
-    placeholder: state.placeholder,
     // trigger the big number keyboard on mobile
     pattern: '[0-9]*',
     'ev-event': changeEvent(state.channels.change)
