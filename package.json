@@ -32,13 +32,8 @@
     "index.js"
   ],
   "dependencies": {
-    "dover": "^1.0.0",
+    "base-input": "~1.2.0",
     "numeric-pattern": "~1.0.0",
-    "observ": "~0.2.0",
-    "value-event": "~5.1.0",
-    "value-pipe": "~1.0.0",
-    "virtual-dom": "^2.0.0",
-    "xtend": "~4.0.0",
     "zippo": "~1.0.1"
   }
 }

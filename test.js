@@ -38,7 +38,7 @@ test('dom to state', function (t) {
     t.plan(2)
     setValue('94105999', function (state) {
       t.equal(state.value(), '94105')
-      t.ok(state.valid())
+      t.ok(ZipInput.validate(state))
     })
   })
 
@@ -54,8 +54,8 @@ test('dom to state', function (t) {
 test('valid', function (t) {
   var state = ZipInput()
   state.value.set('94')
-  t.notOk(state.valid())
+  t.notOk(ZipInput.validate(state))
   state.value.set('94105')
-  t.ok(state.valid())
+  t.ok(ZipInput.validate(state))
   t.end()
 })

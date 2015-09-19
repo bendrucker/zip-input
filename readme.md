@@ -47,11 +47,9 @@ Type: `string`
 
 The ZIP code.
 
-###### valid
+#### `ZipInput.validate(state)` -> `boolean`
 
-Type: `boolean`
-
-The validity of the ZIP code. Treat as read only.
+Validate the current ZIP code value.
 
 #### `ZipInput.render(state, options) -> object`
 
