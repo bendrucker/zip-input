@@ -1,4 +1,4 @@
-# zip-input [![Build Status](https://travis-ci.org/bendrucker/zip-input.svg?branch=master)](https://travis-ci.org/bendrucker/zip-input)
+# zip-input [![Build Status](https://travis-ci.org/bendrucker/zip-input.svg?branch=master)](https://travis-ci.org/bendrucker/zip-input) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/zip-input.svg)](https://greenkeeper.io/)
 
 > ZIP input component for virtual-dom
 
