@@ -42,6 +42,8 @@ test('dom to state', function (t) {
     })
   })
 
+  t.end()
+
   function setValue (value, callback) {
     render(function (state, element, done) {
       element.value = value
